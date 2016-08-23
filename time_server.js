@@ -6,7 +6,7 @@ if(process.argv.length > 2) {
 }
 
 function connectionHandler(socket) {
-	socket.write(formatDate(new Date()));
+	socket.write(formatDate(new Date()) + '\n');
 	socket.end();
 }
 
